@@ -2,8 +2,7 @@
   "rewrites": [{ "source": "/:path*", "destination": "/api/serverless" }],
   "functions": {
     "api/serverless.js": {
-      "includeFiles": "./{dist,node_modules}/**/*"
+      "includeFiles": "{dist,node_modules}/**/*"
     }
-  },
-  "outputDirectory": "."
+  }
 }
