@@ -4,7 +4,7 @@ const server = fastify({
   logger: true,
 });
 
-await server.register(import("../src/app/index.js"));
+await server.register(import("./app/index.js"));
 
 server.listen({ port: 8080, host: "0.0.0.0" }, (err, address) => {
   if (err !== null) {
